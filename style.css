@@ -1,0 +1,62 @@
+body {
+    background-image: url(background.png);
+    margin: auto;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Young Serif', serif;
+    color: #009688;
+}
+
+p {
+    text-align: center;
+}
+
+.cabecalho {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Adicionado para centralizar verticalmente */
+    border-bottom: 1px #009688 solid;
+    background-image: linear-gradient(to right, #009688, #44E3D3, #00E3CC); /* Alterado para linear-gradient padrão */
+    padding: 20px;
+}
+
+.logo {
+    border-radius: 10px 10px;
+    display: flex;
+    margin: auto;
+    height: 100px;
+    margin-top: auto;
+}
+
+.conteudo1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #009688;
+    margin-top: 20px;
+}
+
+.inputs1 {
+    list-style: none;
+    border-radius: 25px 25px;
+    color: #009688;
+    text-align: center;
+}
+
+.inputs2,
+.inputs3,
+.inputs4,
+.option {
+    text-align: center;
+    list-style: none;
+    width: 200px; /* Define a largura padrão para todos os campos */
+    border-radius: 25px 25px;
+    background-color: #00E3CC;
+    color: #009688;
+    margin-bottom: 10px;
+}
+
+.inputs3 {
+    width: 160px;
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&family=Young+Serif&display=swap" rel="stylesheet">
+    <script src="comportamento.js"></script>
+    <title>MelhorPeso</title>
+</head>
+
+<body>
+    <header class="cabecalho">
+        <p class="logo"><img src="Melhor peso.png" alt="Logo" class="logo"></p>
+        <h1 class="conteudo">Calculadora basal</h1>
+    </header>
+
+    <div class="conteudo1">
+        <ul class="inputs1">
+            <li>
+                <p>Peso</p>
+                <input type="text" name="peso" class="inputs2" id="peso" placeholder="Informe o peso">
+            </li>
+            <li>
+                <p>Idade</p>
+                <input type="text" class="inputs2" id="idade" placeholder="Informe a idade">
+            </li>
+            <li>
+                <p>Altura</p>
+                <input type="text" class="inputs2" id="altura" placeholder="Informe a altura">
+            </li>
+            <li>
+                <p>Sexo</p>
+                <select name="sexo" class="inputs3" id="seletor1">
+                    <option value="F">Mulher</option>
+                    <option value="M">Homem</option>
+                </select>
+            </li>
+            <li>
+                <p>Nível de atividade</p>
+                <select name="nivel" class="option" id="seletor2">
+                    <option value="1">Nível-1 Sedentário (Pouco ou nenhum exercício)</option>
+                    <option value="2">Levemente Ativo (Exercício leve ou esportes 1-3 dias por semana)</option>
+                    <option value="3">Muito Ativo (Exercício intenso ou esportes 6-7 dias por semana)</option>
+                    <option value="4">Extremamente Ativo (Exercício muito intenso e trabalho físico diário, além de treinos)</option>
+                </select>
+            </li>
+            <li>
+                <p>Resultado</p>
+                <input type="text" class="inputs3" id="resultado" placeholder="Resultado" disabled>
+            </li>
+            <li>
+                <button class="inputs4" onclick="calcularTMB()">Calcular</button>
+            </li>
+        </ul>
+
+        <!-- Seção de registro de rotinas -->
+        <h2>Registrar Rotina</h2>
+        <input type="text" id="rotina" placeholder="Escreva sua rotina aqui">
+        <button onclick="salvarRotina()">Salvar Rotina</button>
+
+        <h3>Rotinas Salvas:</h3>
+        <ul id="lista-rotinas" class="inputs1"></ul>
+        <button onclick="imprimirRotinas()">Imprimir Rotinas</button>
+    </div>
+</body>
+</html>
